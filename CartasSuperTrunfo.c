@@ -44,7 +44,7 @@ int main() {
     // interagindo com o usuário e coletando as entradas para a primeira carta
     // sintaxe do scanf ("%formato1", &variavel1);
 
-    printf ("Vamos iniciar digitando os dados da primeira carta.\n\nDigite uma letra representativa do Estado. \n\nVaria de 'A' a 'H': ");
+    printf ("Vamos iniciar digitando os dados da primeira carta.\nDigite uma letra representativa do Estado.\nVaria de 'A' a 'H': ");
     scanf (" %c", &estado1);
 
     printf ("Digite o Código da Carta com 2 algarismos numéricos: ");
@@ -52,8 +52,7 @@ int main() {
 
     printf ("Digite o nome da Cidade: ");
     scanf(" %[^\n]", cidade1);
-    //scanf ("%s", &cidade1);
-
+    
     printf ("Digite o número de habitantes da cidade: ");
     scanf ("%d", &populacao1);
 
@@ -70,7 +69,7 @@ int main() {
     // fim do cadastro da primeira carta
     //==================================
 
-    printf ("Agora vamos digitar os dados da segunda carta.\n\nDigite uma letra representativa do Estado.\n\nVaria de 'A' a 'H': ");
+    printf ("\nAgora vamos digitar os dados da segunda carta.\n\nDigite uma letra representativa do Estado.\n\nVaria de 'A' a 'H': ");
     scanf (" %c", &estado2);
 
     printf ("Digite o Código da Carta com 2 algarismos numéricos: ");
@@ -78,8 +77,7 @@ int main() {
 
     printf ("Digite o nome da Cidade: ");
     scanf(" %[^\n]", cidade2);
-    //scanf ("%s", &cidade2);
-
+    
     printf ("Digite o número de habitantes da cidade: ");
     scanf ("%d", &populacao2);
 
@@ -113,7 +111,7 @@ int main() {
     // Imprimindo os dados da carta 2 na tela
     //=======================================
 
-    printf ("\n\n---------------------------\n\n");
+    printf ("\n---------------------------\n\n");
     printf ("Carta 2 :\n");
     printf ("Estado: %c\n", estado2);
     printf ("Código: %c%s\n", estado2, codigo2);
