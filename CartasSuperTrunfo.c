@@ -4,7 +4,9 @@
 // Tema 1 - Cadastro das Cartas
 
 int main() {
-    int Estado;
+    char Estado [20];
+    char codigo [3];
+    
     
     // Sugestão: Defina variáveis separadas para cada atributo da cidade.
     // Exemplos de atributos: código da cidade, nome, população, área, PIB, número de pontos turísticos.
