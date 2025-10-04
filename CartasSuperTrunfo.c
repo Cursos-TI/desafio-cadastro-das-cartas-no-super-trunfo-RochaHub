@@ -1,46 +1,28 @@
 #include <stdio.h>
 
 // Desafio Super Trunfo - Países - Jean Rocha
-// Tema 1 - Cadastro das Cartas
+// Lógica do super trunfo - Iniciante
 
 int main() {
     
     //==============================================
-    // declarando as variáveis para a primeira carta
+    // declarando as variáveis para as duas cartas
     //==============================================
     
-    char estado1; // armazena uma letra representativa de um Estado
+    char estado1, estado2; // armazena uma letra representativa de um Estado
     
-    char codigo1 [4]; // armazena o código da carta
+    char codigo1 [4], codigo2 [4]; // armazena o código da carta
     
-    char cidade1 [50]; // armazena o nome da cidade
+    char cidade1 [50], cidade2 [50]; // armazena o nome da cidade
     
-    int populacao1; // armazena a população da cidade
+    int populacao1, populacao2; // armazena a população da cidade
     
-    float area1; // armazena a área da cidade em km²
+    float area1, area2; // armazena a área da cidade em km²
     
-    float pib1; // armazena o PIB da cidade
+    float pib1, pib2; // armazena o PIB da cidade
     
-    int pontos_turisticos1; //armazena a quantidade de pontos turísticos
+    int pontos_turisticos1, pontos_turisticos2; //armazena a quantidade de pontos turísticos
     
-    //=============================================
-    // declarando as variáveis para a segunda carta
-    //=============================================
-    
-    char estado2; // armazena uma letra representativa de um Estado
-    
-    char codigo2 [4]; // armazena o código da carta
-    
-    char cidade2 [50]; // armazena o nome da cidade
-    
-    int populacao2; // armazena a população da cidade
-    
-    float area2; // armazena a área da cidade em km²
-    
-    float pib2; // armazena o PIB da cidade
-    
-    int pontos_turisticos2; //armazena a quantidade de pontos turísticos
-
     // interagindo com o usuário e coletando as entradas para a primeira carta
     // sintaxe do scanf ("%formato1", &variavel1);
 
@@ -138,6 +120,38 @@ int main() {
     printf ("Número de pontos turísticos: %d\n", pontos_turisticos2);
     printf ("Densidade populacional: %.2f habitantes por km²\n", densidade2);
     printf ("PIB per capita da carta 2: %.2f reais\n", pib_per_capita2);
+
+    //Comparando os dados das cartas
+    printf ("\n---------------------------\n\n");
+    printf ("Comparação da população:\n");
+    printf ("Cidade 1: %s\n", cidade1);
+    printf ("Cidade 2: %s\n", cidade2);
+    if (populacao1 > populacao2) {
+        printf ("A cidade 1 possui maior população (%d) que a cidade 2 (%d).\n", populacao1, populacao2);
+        printf ("A cidade de %s venceu!\n", cidade1);
+    } else if (populacao1 < populacao2) {
+        printf ("A carta 2 possui maior população (%d) que a carta 1 (%d).\n", populacao2, populacao1);
+        printf ("A cidade de %s venceu!\n", cidade2);
+    } else {
+        printf ("As duas cartas possuem a mesma população (%d).\n", populacao1);
+        printf ("Empate!\n");
+    }
+    
+    printf ("\n---------------------------\n\n");
+    printf ("Comparação da área:\n");
+    printf ("Cidade 1: %s\n", cidade1);
+    printf ("Cidade 2: %s\n", cidade2);
+
+    if (area1 > area2) {
+        printf ("A cidade 1 tem maior área (%f) que a cidade 2 (%f).\n", area1, area2);
+        printf ("A cidade de %s venceu!\n", cidade1);
+    } else if (area1 < area2) {
+        printf ("A carta 2 possui maior área (%f) que a carta 1 (%f).\n", area1, area2);
+        printf ("A cidade de %s venceu!\n", cidade2);
+    } else {
+        printf ("As duas cartas possuem a mesma área (%f).\n", area1);
+        printf ("Empate!\n");
+    }
      
     return 0;
 }
